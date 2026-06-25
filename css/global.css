@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --nav-height: 50px;
+    --primary-color: #333333;
+    --bg-color: #ffffff;
+    --text-primary: rgba(212, 175, 55, 1);
+    --text-secondary: rgba(255, 255, 255, 0.75);
+    --text-muted: #999999;
+    --text-white: #ffffff;
+    --font-main: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background: #111111;
+    font-family: var(--font-main);
+}

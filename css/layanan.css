@@ -1,0 +1,115 @@
+/* ===== SECTION LAYANAN ===== */
+.layanan {
+    min-height: 100vh;
+    padding: 100px 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../image/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== HEADER LAYANAN ===== */
+.layanan-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.layanan-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.layanan-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 16px;
+}
+
+.layanan-desc {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ===== GRID KARTU ===== */
+.layanan-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+/* ===== KARTU LAYANAN ===== */
+.layanan-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 32px;
+    transition: all 0.3s;
+}
+
+.layanan-card:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-6px);
+}
+
+/* ===== ICON ===== */
+.card-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+/* ===== JUDUL KARTU ===== */
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+/* ===== DESKRIPSI KARTU ===== */
+.card-desc {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.7;
+}
+
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+    .layanan {
+        padding: 80px 40px;
+    }
+
+    .layanan-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .layanan-title {
+        font-size: 32px;
+    }
+}
+
+/* ===== HP ===== */
+@media (max-width: 480px) {
+    .layanan {
+        padding: 60px 24px;
+    }
+
+    .layanan-grid {
+        grid-template-columns: 1fr;
+        /* kartu susun ke bawah */
+    }
+
+    .layanan-title {
+        font-size: 26px;
+    }
+}

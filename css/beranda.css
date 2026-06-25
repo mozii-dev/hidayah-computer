@@ -1,0 +1,302 @@
+/* ===== HERO SECTION ===== */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 80px;
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(../image/hero.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* ===== KONTEN HERO ===== */
+.hero-content {
+    max-width: 700px;
+}
+
+/* ===== LABEL ===== */
+.hero-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* ===== JUDUL ===== */
+.hero-title {
+    font-size: 56px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* ===== SUBJUDUL ===== */
+.hero-subtitle {
+    font-size: 17px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.70);
+    line-height: 1.8;
+    margin-bottom: 40px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ===== TOMBOL ===== */
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+}
+
+.hero-btn {
+    display: inline-block;
+    background: var(--text-primary);
+    color: #111111;
+    padding: 14px 32px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.hero-btn:hover {
+    background: #ffffff;
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+.hero-btn-outline {
+    display: inline-block;
+    background: transparent;
+    color: #ffffff;
+    padding: 14px 32px;
+    border-radius: 6px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.hero-btn-outline:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border-color: #ffffff;
+    transform: translateY(-2px);
+}
+
+/* ===== STATS SECTION ===== */
+.stats {
+    background: #111111;
+    padding: 60px 80px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 40px;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.stat-item p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.55);
+}
+
+/* ===== LAYANAN SINGKAT ===== */
+.layanan-singkat {
+    background: #111111;
+    padding: 80px 80px;
+}
+
+.layanan-singkat-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.ls-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+}
+
+.ls-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 16px;
+}
+
+.ls-desc {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.60);
+    line-height: 1.7;
+}
+
+/* ===== GRID KARTU ===== */
+.ls-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 50px;
+}
+
+.ls-card {
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s;
+}
+
+.ls-card:hover {
+    background: rgba(212, 175, 55, 0.1);
+    border-color: rgba(212, 175, 55, 0.4);
+    transform: translateY(-6px);
+}
+
+.ls-icon {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.ls-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 10px;
+}
+
+.ls-card p {
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.6;
+}
+
+/* ===== TOMBOL LIHAT SEMUA ===== */
+.ls-more {
+    text-align: center;
+}
+
+.ls-btn {
+    display: inline-block;
+    background: transparent;
+    color: var(--text-primary);
+    padding: 14px 40px;
+    border-radius: 6px;
+    border: 1px solid var(--text-primary);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s;
+}
+
+.ls-btn:hover {
+    background: var(--text-primary);
+    color: #111111;
+    transform: translateY(-2px);
+}
+
+
+/* ===== TABLET ===== */
+@media (max-width: 768px) {
+    .hero {
+        padding: 0 40px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .hero-subtitle {
+        font-size: 15px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+        padding: 40px;
+    }
+
+    .ls-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .layanan-singkat {
+        padding: 60px 40px;
+    }
+}
+
+/* ===== HP ===== */
+@media (max-width: 480px) {
+    .hero {
+        padding: 0 24px;
+        text-align: center;
+    }
+
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 14px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        /* tombol susun ke bawah */
+        align-items: center;
+    }
+
+    .hero-btn,
+    .hero-btn-outline {
+        width: 100%;
+        text-align: center;
+    }
+
+    .stats {
+        padding: 40px 24px;
+    }
+
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .stat-item h3 {
+        font-size: 28px;
+    }
+
+    .ls-grid {
+        grid-template-columns: 1fr;
+        /* kartu susun ke bawah */
+    }
+
+    .layanan-singkat {
+        padding: 60px 24px;
+    }
+
+    .ls-title {
+        font-size: 28px;
+    }
+}
