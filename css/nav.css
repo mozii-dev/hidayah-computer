@@ -138,11 +138,11 @@
 @media (max-width: 480px) {
     .navbar {
         justify-content: space-between;
-        padding: 10px 16px;
+        padding: 25px 10px;
         gap: 0px;
     }
 
     .toko {
-        font-size: 13px;
+        font-size: 14px;
     }
 }
