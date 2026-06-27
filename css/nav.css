@@ -89,6 +89,7 @@
 /* ===== TABLET ===== */
 @media (max-width: 768px) {
     .navbar {
+        justify-content: space-between;
         padding: 0 24px;
         gap: 24px;
         position: relative;
@@ -137,7 +138,7 @@
 @media (max-width: 480px) {
     .navbar {
         justify-content: space-between;
-        padding: 0 24px;
+        padding: 0 16px;
         gap: 0px;
     }
 
